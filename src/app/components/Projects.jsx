@@ -52,12 +52,16 @@ const Projects = () => {
             style={{ backgroundImage: `url('${project.image}')` }}
           >
             <div className="absolute inset-0 bg-black bg-opacity-50 group-hover:bg-opacity-0 transition duration-300 ease-in-out"></div>
-            <div className="absolute bottom-0 left-0 p-4 w-full h-full flex flex-col justify-end opacity-0 group-hover:opacity-100 group-hover:translate-y-[-10px] transition duration-300 ease-in-out">
-              <h2 className="text-xl font-bold text-white">{project.title}</h2>
-              <p className="text-gray-200">{project.description}</p>
-              <button className="mt-4 bg-white text-black rounded-full px-4 py-2 transition-opacity duration-200 ease-in-out opacity-0 group-hover:opacity-100">
-                Learn More
-              </button>
+            <div className="from-blue-600 bg-gradient-to-t w-full h-full opacity-0 group-hover:opacity-100">
+              <div className="absolute bottom-0  left-0 p-4 w-full h-full flex flex-col justify-end  group-hover:translate-y-[-20px] transition duration-300 ease-in-out">
+                <h2 className="text-xl font-bold text-white">
+                  {project.title}
+                </h2>
+                <p className="text-gray-200">{project.description}</p>
+                <button className="mt-4 bg-white text-black rounded-full px-4 py-2 transition-opacity duration-200 ease-in-out opacity-0 group-hover:opacity-100">
+                  Learn More
+                </button>
+              </div>
             </div>
           </div>
         ))}

@@ -32,8 +32,8 @@ const MySkills = () => {
       icon: "https://img.icons8.com/material-outlined/24/000000/github.png",
     },
     {
-      name: "Node.js",
-      icon: "https://img.icons8.com/color/48/000000/nodejs.png",
+      name: "Bootstrap",
+      icon: "https://img.icons8.com/color/48/000000/bootstrap.png",
     },
     {
       name: "MongoDB",
