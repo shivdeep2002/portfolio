@@ -26,7 +26,7 @@ export default function Home() {
   return (
     <div className="">
       <div className="bg-[#191f36] fixed top-0 w-full z-10">
-        <div className="w-[1400px] m-auto">
+        <div className="max-w-[1400px] m-auto">
           <Navbar
             scrollToRef={scrollToRef}
             refs={{ homeRef, aboutRef, skillsRef, projectsRef, contactRef }}
@@ -34,29 +34,29 @@ export default function Home() {
         </div>
       </div>
       <div ref={homeRef} className="bg-[#191f36] pt-[4rem]">
-        <div className="w-[1400px] m-auto">
-          <div className="py-32">
+        <div className="max-w-[1400px] m-auto">
+          <div className="pb-32">
             <HomePage />
           </div>
         </div>
       </div>
       <div ref={aboutRef} className="bg-[#262B40]">
-        <div className="w-[1400px] m-auto py-36">
-          <About />
+        <div className="max-w-[1400px] m-auto py-36">
+          <About scrollToRef={scrollToRef} refs={{ homeRef }} />
         </div>
       </div>
       <div ref={skillsRef} className="bg-[#191f36]">
-        <div className="w-[1400px] m-auto py-32">
+        <div className="max-w-[1400px] m-auto py-32">
           <MySkills />
         </div>
       </div>
       <div ref={projectsRef} className="bg-[#262B40]">
-        <div className="w-[1400px] m-auto py-28">
+        <div className="max-w-[1400px] m-auto py-28">
           <Projects />
         </div>
       </div>
       <div ref={contactRef} className="bg-[#191f36]">
-        <div className="w-[1400px] m-auto">
+        <div className="max-w-[1400px] m-auto">
           <ContactForm />
         </div>
       </div>

@@ -58,7 +58,7 @@ const MySkills = () => {
         </span>{" "}
       </span>
 
-      <div className="text-white p-5 grid grid-cols-3 gap-4">
+      <div className="text-white p-5 grid grid-cols-2 sm:grid-cols-3 gap-4">
         {skills.map((skill, index) => (
           <div
             key={index}

@@ -8,7 +8,7 @@ function ContactForm() {
           Contact <span className="text-blue-600">Me</span>
         </h2>
       </div>
-      <div className="w-full max-w-2xl p-8 rounded-lg">
+      <div className="w-full max-w-2xl sm:p-8 rounded-lg">
         <form className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <input
             type="text"
