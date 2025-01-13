@@ -24,7 +24,7 @@ export default function Home() {
     });
 
   return (
-    <div className="">
+    <div className="text-white">
       <div className="bg-[#191f36] fixed top-0 w-full z-10">
         <div className="max-w-[1400px] m-auto">
           <Navbar

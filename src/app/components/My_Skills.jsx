@@ -50,7 +50,7 @@ const MySkills = () => {
   ];
 
   return (
-    <div className="font-bold">
+    <div className="font-bold text-white">
       <span className="flex justify-center ">
         <span className="relative group text-2xl  ">
           My Skills

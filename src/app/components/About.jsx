@@ -4,7 +4,7 @@ import React from "react";
 const About = ({ refs, scrollToRef }) => {
   return (
     <div>
-      <div className="flex gap-10 p-5 flex-col lg:flex-row items-center justify-between font-bold">
+      <div className="flex gap-10 p-5 flex-col lg:flex-row items-center justify-between font-bold text-white">
         <div className="">
           <Image
             src="/shivdeep.png"
