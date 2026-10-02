@@ -16,6 +16,16 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+## Contact form email
+
+The contact form uses Resend's free email API tier. Create a Resend account and an API key, then copy `.env.example` to `.env.local` and set:
+
+- `RESEND_API_KEY`: your Resend API key
+- `CONTACT_TO_EMAIL`: the inbox that should receive portfolio messages
+- `CONTACT_FROM_EMAIL`: `Portfolio <onboarding@resend.dev>` for initial testing, or a sender address on a domain you have verified in Resend
+
+Resend's test sender is limited; to deliver messages to other recipients, verify a domain in Resend and use an address from that domain for `CONTACT_FROM_EMAIL`. Restart the dev server after changing `.env.local`. Keep the API key server-side and never prefix it with `NEXT_PUBLIC_`.
+
 You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.

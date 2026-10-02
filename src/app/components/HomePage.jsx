@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import React, { useState } from "react";
+import { useState } from "react";
 import TypeWriterEffect from "./TypeWriterEffect";
 import Link from "next/link";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
@@ -92,7 +92,7 @@ const HomePage = () => {
       <div className="flex justify-center items-center min-w-[30vw]">
         <div>
           <Image
-            src="/shivdeep.png"
+            src="/shivdeep.jpeg"
             alt="hero"
             width={1000}
             height={1000}
