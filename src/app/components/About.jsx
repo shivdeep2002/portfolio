@@ -1,5 +1,4 @@
 import Image from "next/image";
-import React from "react";
 
 const About = ({ refs, scrollToRef }) => {
   return (
@@ -35,7 +34,7 @@ const About = ({ refs, scrollToRef }) => {
               <div className="mt-5">
                 <button
                   onClick={() => scrollToRef(refs.homeRef)}
-                  className=" shadow-blue-600 rounded-lg px-8 bg-blue-600 py-3 "
+                  className="glass-action rounded-lg px-8 py-3"
                 >
                   Read More
                 </button>

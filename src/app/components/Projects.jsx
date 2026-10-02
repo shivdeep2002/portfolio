@@ -1,5 +1,4 @@
 import Link from "next/link";
-import React from "react";
 const projects = [
   {
     title: "Catax",
@@ -59,8 +58,8 @@ const Projects = () => {
             style={{ backgroundImage: `url('${project.image}')` }}
           >
             <div className="absolute inset-0 bg-black bg-opacity-50 group-hover:bg-opacity-0 transition duration-300 ease-in-out"></div>
-            <div className="from-blue-800 bg-gradient-to-t w-full h-full opacity-0 group-hover:opacity-100">
-              <div className="absolute bottom-0  left-0 p-4 w-full h-full flex flex-col justify-end  group-hover:translate-y-[-20px] transition duration-300 ease-in-out">
+            <div className="from-blue-800 bg-gradient-to-t w-full h-full opacity-0 group-hover:opacity-100 max-md:opacity-100">
+              <div className="glass-surface absolute bottom-3 left-3 right-3 rounded-xl p-4 flex flex-col justify-end group-hover:translate-y-[-4px] transition duration-300 ease-in-out">
                 <h2 className="text-xl font-bold text-white">
                   {project.title}
                 </h2>
@@ -68,7 +67,7 @@ const Projects = () => {
                 <Link
                   target="_blank"
                   href={project.path}
-                  className="mt-4 text-center bg-white text-black rounded-full px-4 py-2 transition-opacity duration-200 ease-in-out opacity-0 group-hover:opacity-100"
+                  className="mt-4 text-center bg-white text-black rounded-full px-4 py-2 transition-opacity duration-200 ease-in-out opacity-0 group-hover:opacity-100 max-md:opacity-100"
                 >
                   Learn More
                 </Link>

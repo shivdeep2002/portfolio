@@ -1,7 +1,6 @@
 "use client";
 
-import React, { useRef } from "react";
-import Image from "next/image";
+import { useRef } from "react";
 
 import About from "./components/About";
 import MySkills from "./components/My_Skills";
@@ -25,7 +24,7 @@ export default function Home() {
 
   return (
     <div className="text-white">
-      <div className="bg-[#191f36] fixed top-0 w-full z-10">
+      <div className="glass-surface fixed top-0 z-10 w-full border-x-0 border-t-0">
         <div className="max-w-[1400px] m-auto">
           <Navbar
             scrollToRef={scrollToRef}
@@ -33,29 +32,29 @@ export default function Home() {
           />
         </div>
       </div>
-      <div ref={homeRef} className="bg-[#191f36] pt-[4rem]">
+      <div ref={homeRef} className="glass-context bg-[#191f36] pt-[4rem]">
         <div className="max-w-[1400px] m-auto">
           <div className="pb-32">
             <HomePage />
           </div>
         </div>
       </div>
-      <div ref={aboutRef} className="bg-[#262B40]">
+      <div ref={aboutRef} className="glass-context bg-[#262B40]">
         <div className="max-w-[1400px] m-auto py-36">
           <About scrollToRef={scrollToRef} refs={{ homeRef }} />
         </div>
       </div>
-      <div ref={skillsRef} className="bg-[#191f36]">
+      <div ref={skillsRef} className="glass-context bg-[#191f36]">
         <div className="max-w-[1400px] m-auto py-32">
           <MySkills />
         </div>
       </div>
-      <div ref={projectsRef} className="bg-[#262B40]">
+      <div ref={projectsRef} className="glass-context bg-[#262B40]">
         <div className="max-w-[1400px] m-auto py-28">
           <Projects />
         </div>
       </div>
-      <div ref={contactRef} className="bg-[#191f36]">
+      <div ref={contactRef} className="glass-context bg-[#191f36]">
         <div className="max-w-[1400px] m-auto">
           <ContactForm />
         </div>

@@ -1,6 +1,5 @@
 "use client";
-import Link from "next/link";
-import React, { useState } from "react";
+import { useState } from "react";
 
 const Navbar = ({ scrollToRef, refs }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -41,7 +40,7 @@ const Navbar = ({ scrollToRef, refs }) => {
         <div
           className={`${
             isMobileMenuOpen ? "flex" : "hidden"
-          } absolute top-full left-0 w-full bg-gray-900 md:hidden flex-col items-start`}
+          } glass-surface absolute top-full left-0 w-full rounded-b-lg md:hidden flex-col items-start`}
         >
           <a
             className="p-4 w-full text-white"

@@ -62,7 +62,7 @@ const MySkills = () => {
         {skills.map((skill, index) => (
           <div
             key={index}
-            className="flex flex-col items-center p-3 rounded-full group" // Added 'group' to scope hover state to children
+            className="glass-surface glass-interactive flex flex-col items-center p-3 rounded-xl group"
           >
             <Image
               src={skill.icon}

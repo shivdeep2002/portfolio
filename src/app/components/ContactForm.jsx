@@ -3,7 +3,7 @@
 import { useState } from "react";
 
 const fieldClassName =
-  "w-full rounded-md border border-white/10 bg-[#2a3342] p-4 text-white placeholder-gray-400 outline-none transition focus:border-blue-500 focus:ring-2 focus:ring-blue-500/30";
+  "glass-field w-full rounded-md p-4 text-white placeholder-gray-400 outline-none";
 
 function ContactForm() {
   const [status, setStatus] = useState({ type: "", message: "" });
@@ -49,7 +49,7 @@ function ContactForm() {
       <p className="mb-8 max-w-xl text-center text-gray-300">
         Have a project or opportunity in mind? Send me a message and I will get back to you soon.
       </p>
-      <div className="w-full max-w-2xl">
+      <div className="glass-surface w-full max-w-2xl rounded-2xl p-5 sm:p-8">
         <form onSubmit={handleSubmit} className="grid grid-cols-1 gap-5 md:grid-cols-2">
           <label className="grid gap-2 text-sm text-gray-200">
             Your name
@@ -111,7 +111,7 @@ function ContactForm() {
           <button
             type="submit"
             disabled={isSubmitting}
-            className="w-full rounded-md bg-blue-600 py-3 font-semibold text-white transition hover:bg-blue-700 disabled:cursor-not-allowed disabled:opacity-60 md:col-span-2"
+            className="glass-action w-full rounded-md py-3 font-semibold text-white disabled:cursor-not-allowed disabled:opacity-60 md:col-span-2"
           >
             {isSubmitting ? "Sending..." : "Send Message"}
           </button>

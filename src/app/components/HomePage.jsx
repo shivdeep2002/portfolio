@@ -20,7 +20,7 @@ const HomePage = () => {
 
   return (
     <div className="min-h-[80vh] flex flex-col-reverse md:flex-row justify-center items-center gap-10 p-5 bg-[#191f36] text-white">
-      <div className="h-full w-full flex  justify-center flex-col gap-3 font-bold">
+      <div className="glass-surface h-full w-full flex justify-center flex-col gap-3 rounded-2xl p-5 sm:p-7 font-bold">
         <h3 className="text-4xl">Hi, Myself</h3>
         <h1 className=" text-4xl md:text-6xl">Shivdeep Mishra</h1>
         <h4 className=" text-2xl md:text-3xl flex">
@@ -37,7 +37,7 @@ const HomePage = () => {
         <div className="flex gap-3 w-full">
           <Link
             href="/https://github.com/shivdeep2002"
-            className={`border border-blue-600 p-2 rounded-full transition duration-300 ease-in-out ${
+            className={`glass-surface glass-interactive glass-social border-blue-600 p-2 rounded-full transition duration-300 ease-in-out ${
               isHovered === "github" ? "bg-blue-600 shadow-xl" : ""
             }`}
             onMouseEnter={() => handleMouseEnter("github")}
@@ -52,7 +52,7 @@ const HomePage = () => {
           </Link>
           <Link
             href="https://www.instagram.com/iam__sachin__mishra/"
-            className={`border border-blue-600 p-2 rounded-full transition duration-300 ease-in-out ${
+            className={`glass-surface glass-interactive glass-social border-blue-600 p-2 rounded-full transition duration-300 ease-in-out ${
               isHovered === "instagram" ? "bg-blue-600 shadow-xl" : ""
             }`}
             onMouseEnter={() => handleMouseEnter("instagram")}
@@ -67,7 +67,7 @@ const HomePage = () => {
           </Link>
           <Link
             href="https://www.linkedin.com/in/shivdeep-mishra/"
-            className={`border border-blue-600 p-2 rounded-full transition duration-300 ease-in-out ${
+            className={`glass-surface glass-interactive glass-social border-blue-600 p-2 rounded-full transition duration-300 ease-in-out ${
               isHovered === "linkedin" ? "bg-blue-600 shadow-xl" : ""
             }`}
             onMouseEnter={() => handleMouseEnter("linkedin")}
@@ -84,9 +84,13 @@ const HomePage = () => {
 
         <div className="mt-5">
           {" "}
-          <button className=" shadow-blue-600 rounded-lg px-8 bg-blue-600 py-3 ">
+          <a
+            href="/shivdeep%20mishra.pdf"
+            download="Shivdeep-Mishra-CV.pdf"
+            className="glass-action inline-flex rounded-lg px-8 py-3 text-white"
+          >
             Download CV
-          </button>
+          </a>
         </div>
       </div>
       <div className="flex justify-center items-center min-w-[30vw]">
